@@ -87,7 +87,7 @@ _____________________________________"""
 if __name__ == '__main__':
     os.system("clear")
     print (banner)
-    print ("      \033[90m -\033[1;91mX\033[90m- \033[1;97mCtrz+z to exit \033[90m-\033[1;91mX\033[90m-")
+    print ("      \033[90m -\033[1;91mX\033[90m- \033[1;97mCtrl+z to exit \033[90m-\033[1;91mX\033[90m-")
     no=input("\033[1;97m[\033[1;96m•\033[1;97m]No Target\033[90m(\033[1;94m8×××\033[90m)\033[1;97m:\033[1;94m ")
     while True:
         try:
@@ -98,5 +98,6 @@ if __name__ == '__main__':
             cal1()
             sleep(2)
             countdownTimer(2, 00)
+            print("\n")
         except requests.exceptions.ConnectionError:
                sys.exit("\033[1;97m[\033[1;91m×\033[1;97m\033[1;91mKoneksi Error!!")
